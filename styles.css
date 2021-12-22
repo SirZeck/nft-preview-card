@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --ff-primary: 'Outfit', sans-serif;
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --transition: all 0.3s linear;
+  --radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background: var(--main-bg);
+  font-size: 18px;
+  color: hsl(0, 0%, 100%, 60%);
+  padding: 1.25rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.card-component {
+  margin: 4rem 2rem;
+  padding: 1.25rem;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+}
+.nft-img-container {
+  position: relative;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 4px);
+  border-radius: var(--radius);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.img-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.nft-img-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.nft-img-icon:hover {
+  opacity: 1;
+}
+.nft-img {
+  border-radius: var(--radius);
+}
+.nft-img:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+.nft-title {
+  color: var(--white);
+  margin: 1rem 0.5rem 0.5rem 0;
+}
+.nft-title:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+.nft-text {
+  font-weight: 300;
+}
+
+.line {
+  border: 1px solid var(--line);
+}
+
+.nft-price-time {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nft-price {
+  color: var(--cyan);
+}
+.nft-price-img {
+  margin-right: 0.5rem;
+}
+.nft-time-img {
+  margin-right: 0.5rem;
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.footer img {
+  width: 3rem;
+  margin-right: 1rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.name {
+  color: var(--white);
+  font-weight: 400;
+}
+.name:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+@media screen and (min-width: 375px) {
+  .card-component {
+    width: 450px;
+    margin: 5rem auto 5rem;
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
