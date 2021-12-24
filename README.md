@@ -2,7 +2,7 @@
 
 ![Design preview for the NFT preview card component coding challenge](./images/desktop-preview.jpg)
 
-## The challenge
+## [The challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 
 Your challenge is to build out this preview card component and get it looking as close to the design as possible.
 
